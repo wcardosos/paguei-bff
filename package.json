@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx --watch --env-file=.env src/infra/server.ts",
-    "build": "tsc --project tsconfig.build.json && tsc-alias",
+    "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "start": "node dist/infra/server.js",
     "test": "vitest run --config tests/unit/vitest.config.mts",
     "test:e2e": "vitest run --config tests/e2e/vitest.config.mts"
